@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main
 {
     private static final int NONE = 0;
-    private static final String[] OPTIONS = { "W", "N", "M", "Q" };
+    private static final String[] OPTIONS = {"W", "N", "M", "Q"};
 
     public static void main(final String[] args)
     {
@@ -13,9 +13,9 @@ public class Main
         Scanner userInput;
         String entryMessage;
 
-        sb = new StringBuilder();
-        runProgram   = true;
-        userInput    = new Scanner(System.in);
+        sb         = new StringBuilder();
+        runProgram = true;
+        userInput  = new Scanner(System.in);
 
         sb.append("Please select an option (case insensitive) from the menu below:\n");
         sb.append("W: Word Game\n");
@@ -36,12 +36,13 @@ public class Main
 
                 final String input;
 
-                input = userInput.nextLine().trim().toUpperCase();
+                input        = userInput.nextLine().trim().toUpperCase();
                 isValidInput = Arrays.asList(OPTIONS).contains(input);
 
                 if (isValidInput)
                 {
-                    switch (input) {
+                    switch (input)
+                    {
                         case "W":
                             System.out.println("Starting Word Game...\n");
                             break;
