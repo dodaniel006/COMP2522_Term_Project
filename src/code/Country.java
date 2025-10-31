@@ -1,9 +1,22 @@
+/**
+ * A class representing a country with its name, capital city, and interesting facts.
+ *
+ * @author Daniel Do
+ * @version 1.0
+ */
 final class Country
 {
     private final String   name;
     private final String   capitalCityName;
     private final String[] facts;
 
+    /**
+     * Constructor for Country Class.
+     *
+     * @param name the name of the country
+     * @param capitalCityName the capital city of the country
+     * @param facts an array of interesting facts about the country
+     */
     public Country(final String name,
                    final String capitalCityName,
                    final String[] facts)
