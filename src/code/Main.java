@@ -14,7 +14,6 @@ public class Main
         String entryMessage;
 
         sb         = new StringBuilder();
-        runProgram = true;
         userInput  = new Scanner(System.in);
 
         sb.append("Please select an option (case insensitive) from the menu below:\n");
@@ -25,6 +24,7 @@ public class Main
 
         System.out.println("Welcome to Daniel Do's Term Project.\n");
         entryMessage = sb.toString();
+        runProgram = true;
 
         while (runProgram)
         {
